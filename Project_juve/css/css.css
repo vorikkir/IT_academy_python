@@ -1,0 +1,114 @@
+
+.my-flex-cont {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    background: #282828;
+}
+.my-flex-box {
+    margin: 5px;
+    padding: 5px;
+    flex: 0 1 auto;
+    border: black 1px;
+    background: #282828;
+}
+.my-flex-box:nth-child(1) {
+    align-self: stretch;
+    padding: 0;
+    margin-top: 3px;
+    margin-left: 3px;
+    margin-bottom: 3px;
+
+
+}
+.my-flex-box:nth-child(2) {
+    flex: 3 1 600px;
+    margin: 5px;
+    text-align: center;
+
+}
+
+.my-flex-box:nth-child(3) {
+    margin: 10px;
+    align-self: auto;
+
+}
+.my-flex-box:nth-child(4) {
+    margin: 10px;
+    color: g;
+}
+
+
+/*блок навигации с кнопками*/
+
+
+.nav-my-flex-cont {
+    display: flex;
+    align-content: center;
+    width: 100%;
+    height: 23px;
+    justify-content: center;
+
+}
+.nav-my-flex-box {
+    margin: 5px;
+    padding: auto;
+    flex: 0 1 150px;
+    align-self: center;
+    background: #282828;
+
+}
+
+a strong:hover{
+    font-size: 20px;
+    color: gold;
+}
+
+.nav-my-flex-cont a:link, .nav-my-flex-cont a:visited{
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+}
+
+
+/*Страница новости*/
+
+.content-news {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-content: center;
+    width: 100%;
+    text-align: center;
+
+
+}
+.content-news-box {
+    margin: 5px;
+    padding: 5px;
+    flex: 0 1 auto;
+    align-self: stretch;
+    display: flex;
+    text-align: center;
+    width: 900px;
+}
+
+
+/*Страница таблица*/
+
+
+.table-my-flex-cont {
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: center;
+    width: 100%;
+    height: 100px;
+}
+.table-my-flex-box {
+    margin: 5px;
+    padding: 10px;
+    flex: 0 1 auto;
+    align-self: stretch;
+    text-align: center;
+}
