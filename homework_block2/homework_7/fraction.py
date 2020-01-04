@@ -8,8 +8,9 @@ import math
 class Fraction:
     """Класс поддерживает все арифметические операции над дробями"""
     def __init__(self, numerator, denominator):
-        self.numerator = numerator
-        self.denominator = denominator
+        gcd = math.gcd(numerator, denominator)
+        self.numerator = numerator // gcd
+        self.denominator = denominator // gcd
 
     def __str__(self):
         return str(self.numerator) + "/" + str(self.denominator)
@@ -44,5 +45,7 @@ if __name__ == "__main__":
     my_fraction2 = Fraction(3, 4)
     my_fraction3 = Fraction(1, 9)
     my_fraction4 = Fraction(3, 5)
-
     print(my_fraction1+my_fraction2+my_fraction3*my_fraction4)
+
+    my_fraction1 = Fraction(40, 70)
+    print(my_fraction1)
